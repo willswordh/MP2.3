@@ -2,7 +2,7 @@
 
 In this 4-part MP, you will get familiar with building and evaluating Search Engines.
 
-## Part 2
+## Part 3
 
 ### Due: Sept 18, 2022
 
