@@ -4,7 +4,7 @@ In this 4-part MP, you will get familiar with building and evaluating Search Eng
 
 ## Part 3
 
-### Due: Sept 18, 2022
+### Due: Sept 25, 2022
 
 In this part, you will use the MeTA toolkit to do the following:
 - create a search engine over a dataset
