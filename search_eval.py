@@ -23,7 +23,7 @@ class InL2Ranker(metapy.index.RankingFunction):
         tfn = sd.doc_term_count * math.log((1+ sd.avg_dl/sd.doc_size,2)
      
         
-        return  sum(sd.query_term_weight *(tfn/(tfn + sd.query_length)) * math.log((sd.num_docs +1)/(sd.corpus_term_count +0.5)),2)
+        return  (sd.query_term_weight *(tfn/(tfn + self.param)) * math.log((sd.num_docs +1)/(sd.corpus_term_count +0.5)),2)
 
 
 def load_ranker(cfg_file):
