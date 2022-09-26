@@ -21,9 +21,9 @@ class InL2Ranker(metapy.index.RankingFunction):
         @see https://meta-toolkit.org/doxygen/structmeta_1_1index_1_1score__data.html
         """
         tfn = sd.doc_term_count * math.log((1+ sd.avg_dl/sd.doc_size,2)
-        score = sum(sd.query_term_weight *(tfn/(tfn + sd.query_length)) * math.log((sd.num_docs +1)/(sd.corpus_term_count +0.5)),2)
+     
         
-        return (self.param + sd.doc_term_count) / (self.param * sd.doc_unique_terms + sd.doc_size)
+        return  sum(sd.query_term_weight *(tfn/(tfn + sd.query_length)) * math.log((sd.num_docs +1)/(sd.corpus_term_count +0.5)),2)
 
 
 def load_ranker(cfg_file):
